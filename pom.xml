@@ -6,29 +6,6 @@
     <version>1.0.0.0</version>
     <packaging>pom</packaging>
     <name>biblioteca</name>
-    <plugins>
-<!-- ... -->
-        <plugin>
-            <groupId>com.jelastic</groupId>
-            <artifactId>jelastic-maven-plugin</artifactId>
-            <version><!--(current release version 1.6) or (developer version 1.7-SNAPSHOT)-->
-            </version>
-            <configuration>
-                <email>${jelastic.username}</email>
-                <password>${jelastic.password}</password>
-                <context><!-- ... -->
-                </context>
-                <environment><!-- ... -->
-                </environment>
-                <comment><!-- for example ${buildNumber}       -->
-                </comment> - only version 1.7-SNAPSHOT
-                <api_hoster><!-- ...(put here API of your hoster) -->
-                    https://app.jelastic.dogado.eu
-                </api_hoster>
-            </configuration>
-        </plugin>
-<!-- ... -->
-    </plugins>
     <pluginRepositories>
         <pluginRepository>
             <id>sonatype-oss-public</id>
